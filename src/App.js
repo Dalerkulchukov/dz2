@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import AboutPages from "./pages/AboutPages/AboutPages";
+
 
 function App() {
+  const info = {
+    title: "I am title",
+    body: "Lorem inpsum bla bla bla"
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AboutPages info={info}/>
     </div>
   );
 }
